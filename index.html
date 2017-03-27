@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MAD</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, 
+	minimum-scale=1" />
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/equilizer.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+
+	
+</head>
+<body>
+	<div class="cover">
+		<header>
+			<div class="container">
+				<div class="logo">
+					<a href="#" title=""><img src="images/logoMain.png" alt=""></a>
+				</div>
+				<nav class="nav">
+					<a href="#">how it works</a>
+					<a href="#">about</a>
+					<a href="#">team</a>
+					<a href="#">contact</a>
+				</nav>
+			</div>
+		</header>
+		<div class="coverLogo">
+			<img src="images/logo2.gif" alt="logo">	
+		</div>
+	</div>
+	<div class="videoContainer">
+		<video  autoplay="autoplay" loop>
+		 	<source src="videos/video.mp4" type="video/mp4"> 
+		</video>
+		<div class="overlayImg">
+			<img src="images/dots.png" alt="">
+			<div class="socialIcon">
+				<div class="icon fbIcon"></div>
+				<div class="icon twitterIcon"></div>
+				<div class="icon linkedInIcon"></div>
+				<div class="bar-c">
+				  <div id="bar-1" class="bar"></div>
+				  <div id="bar-2" class="bar"></div>
+				  <div id="bar-3" class="bar"></div>
+				  <div id="bar-4" class="bar"></div>
+				  <div id="bar-5" class="bar"></div>
+				  <div id="bar-6" class="bar"></div>
+
+				</div>
+				<a href="#" title="">mute</a>
+			</div>
+		</div>
+		<div class="getEarlyAccess">
+			<a href="#" title="">get early access</a>
+		</div>
+	</div>
+<script type="text/javascript">
+		var clicked = true;
+
+		$(".bar-c").click( function() {
+		  if (clicked) {
+		    $(".bar").addClass("noAnim");
+		    clicked = false;
+		  } else {
+		    $(".bar").removeClass("noAnim");
+		    clicked = true;
+		  }
+		});
+	</script>
+
+</body>
+</html>
